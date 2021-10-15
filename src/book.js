@@ -24,12 +24,22 @@ function calculatePageCount(bookTitle) {
   return bookTitle.length * 20
 }
 
+function writeBook (bookTitle, bookCharacter) {
+  return {
+    title: bookTitle,
+    mainCharacter: bookCharacter,
+    pageCount: calculatePageCount(bookTitle),
+    genre: "fantasy"
+
+  }
+}
+
 
 module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
   calculatePageCount,
-  // writeBook,
+  writeBook,
   // editBook
 }
