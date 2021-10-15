@@ -34,6 +34,9 @@ function writeBook (bookTitle, bookCharacter) {
   }
 }
 
+function editBook () {
+  
+}
 
 module.exports = {
   createTitle,
@@ -41,5 +44,5 @@ module.exports = {
   saveReview,
   calculatePageCount,
   writeBook,
-  // editBook
+  editBook
 }
