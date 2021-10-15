@@ -25,17 +25,27 @@ function calculatePageCount(bookTitle) {
 }
 
 function writeBook (bookTitle, bookCharacter) {
-  return {
+  var book = {
     title: bookTitle,
     mainCharacter: bookCharacter,
     pageCount: calculatePageCount(bookTitle),
     genre: "fantasy"
+/* this can also be written like this. It's probably better to assign the object to a variable
+var book = {
+  title: bookTitle,
+  mainCharacter: bookCharacter,
+  pageCount: calculatePageCount(bookTitle),
+  genre: "fantasy"
+}
+return book
+*/
 
   }
+  return book
 }
 
-function editBook () {
-  
+function editBook (book) {
+  book.pageCount = book.pageCount * .75
 }
 
 module.exports = {
