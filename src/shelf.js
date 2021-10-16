@@ -37,12 +37,21 @@ function listTitles (shelf) {
   return finalList
 }
 
+function searchShelf (shelf, title) {
+  for (var i = 0; i < shelf.length; i++) {
+    if (shelf[i].title === title) {
+      return true
+    }
+    }
+    return false
+  }
+
 
 module.exports = {
   shelfBook,
   unshelfBook,
   listTitles,
-  // searchShelf
+  searchShelf
 };
 
 //
